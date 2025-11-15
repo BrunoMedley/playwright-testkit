@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@tests/*": ["tests/*"],
+      "@config/*": ["config/*"],
+      "@utils/*": ["tests/utils/*"],
+      "@pages/*": ["tests/pages/*"],
+      "@fixtures/*": ["tests/fixtures/*"]
+    },
+    "types": ["node", "@playwright/test"],
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": [
+    "tests/**/*",
+    "config/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "reports",
+    "allure-results",
+    "allure-report"
+  ]
+}
+

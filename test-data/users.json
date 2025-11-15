@@ -1,0 +1,32 @@
+{
+  "validUsers": [
+    {
+      "username": "testuser@example.com",
+      "password": "ValidPassword123!",
+      "expectedRole": "user"
+    },
+    {
+      "username": "admin@example.com",
+      "password": "AdminPassword123!",
+      "expectedRole": "admin"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "username": "invalid@example.com",
+      "password": "WrongPassword",
+      "expectedError": "Invalid credentials"
+    },
+    {
+      "username": "",
+      "password": "SomePassword",
+      "expectedError": "Username is required"
+    },
+    {
+      "username": "test@example.com",
+      "password": "",
+      "expectedError": "Password is required"
+    }
+  ]
+}
+
