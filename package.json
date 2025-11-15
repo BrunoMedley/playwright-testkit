@@ -1,5 +1,5 @@
 {
-  "name": "playwright-automation-framework",
+  "name": "playwright-testkit",
   "version": "1.0.0",
   "description": "Production-ready Playwright TypeScript automation framework",
   "main": "index.js",
